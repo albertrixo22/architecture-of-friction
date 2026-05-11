@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'DangerFont';
+    src: url('fonts/danger_font.ttf') format('truetype');
+    font-display: swap;
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+.specimen {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+
+.danger-text {
+    font-family: 'DangerFont', sans-serif;
+    font-size: clamp(60px, 15vw, 180px); 
+    line-height: 0.85;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    transition: color 0.3s ease;
+}
+
+.danger-text:hover {
+    color: #FF0000;
+}
+
+.manifesto {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid #333;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+}
+
+.manifesto p {
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.app-cta {
+    margin-top: 2rem;
+    background-color: #1A1A1A;
+    border: 2px solid #FF0000;
+    padding: 2.5rem;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.app-cta h3 {
+    color: #FF0000;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+}
+
+.app-cta p {
+    color: #B0B0B0;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #FF0000;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #ffffff;
+    color: #FF0000;
+    transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 1rem;
+    }
+    
+    .specimen {
+        margin-bottom: 2rem;
+    }
+    
+    .app-cta {
+        padding: 1.5rem;
+    }
+}
